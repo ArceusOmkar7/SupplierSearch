@@ -1,0 +1,14 @@
+{
+  "etag": "\"8e4db974-677f-43a9-b78b-bf271a52ed7d:8\"",
+  "body": {
+    "decision": {
+      "id": "28641b9a-4562-49a8-b911-456937dd588b",
+      "snapshot_id": "0b93b61f-8c27-4653-8361-38e04eb3fe4a",
+      "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+      "decision": "select",
+      "reason": "Request the missing certificate before ordering",
+      "buyer_id": "732ac1dc-aecb-47b7-92a7-ef891efce889",
+      "created_at": "2026-10-20T13:15:06.168257+00:00"
+    }
+  }
+}

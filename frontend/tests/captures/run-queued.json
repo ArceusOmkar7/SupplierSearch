@@ -1,0 +1,104 @@
+{
+  "etag": "\"8e4db974-677f-43a9-b78b-bf271a52ed7d:7\"",
+  "body": {
+    "run": {
+      "id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+      "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+      "revision_id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+      "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+      "policy_version": "core-v1",
+      "country_pack_version": "IN/core-v1",
+      "mode": "live",
+      "state": "queued",
+      "requested_at": "2026-10-20T13:15:04.733139+00:00",
+      "started_at": null,
+      "initial_deadline": "2026-10-20T13:45:04.733139+00:00",
+      "completed_at": null,
+      "budgets": {
+        "schema_version": 1,
+        "paid_spend_limit": 0,
+        "requests": {
+          "global": 4,
+          "per_domain": 1,
+          "browser": 1
+        },
+        "per_supplier": {
+          "pages": 20,
+          "certificate_pdfs": 5,
+          "depth": 2
+        },
+        "timeout_seconds": 20,
+        "transient_retries": 1,
+        "website_deadline_seconds": 900,
+        "model": {
+          "concurrency": 1,
+          "context_tokens": 4096
+        }
+      },
+      "task_count": 12,
+      "task_states": {
+        "queued": 12
+      },
+      "etag": "\"83fa705a-11a1-441f-a241-89a74ae16d8c:queued:\""
+    },
+    "source_capabilities": [
+      {
+        "source_id": "in.local-export",
+        "claim_types": [
+          "legal_existence",
+          "regulatory"
+        ],
+        "enabled": true,
+        "access_mode": "local_export",
+        "disabled_reason": null
+      },
+      {
+        "source_id": "in.supplier-website",
+        "claim_types": [
+          "manufacturer",
+          "part_capability",
+          "capacity"
+        ],
+        "enabled": true,
+        "access_mode": "public_page",
+        "disabled_reason": null
+      },
+      {
+        "source_id": "in.buyer-certificate",
+        "claim_types": [
+          "certificate"
+        ],
+        "enabled": true,
+        "access_mode": "buyer_document",
+        "disabled_reason": null
+      },
+      {
+        "source_id": "in.issuer-pages",
+        "claim_types": [
+          "certificate"
+        ],
+        "enabled": true,
+        "access_mode": "issuer_page",
+        "disabled_reason": null
+      },
+      {
+        "source_id": "in.bis-orders",
+        "claim_types": [
+          "regulatory"
+        ],
+        "enabled": true,
+        "access_mode": "official_document",
+        "disabled_reason": null
+      },
+      {
+        "source_id": "in.current-gst-status",
+        "claim_types": [
+          "legal_existence"
+        ],
+        "enabled": false,
+        "access_mode": "free_api",
+        "disabled_reason": "No eligible free current-status access is configured; this claim remains unproven."
+      }
+    ]
+  }
+}

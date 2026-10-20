@@ -1,0 +1,98 @@
+{
+  "etag": "\"b157bd7e-d504-4227-9eda-557c9ac6a5f3:dbd1cbfeb753d29e\"",
+  "body": {
+    "id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+    "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+    "sequence": 1,
+    "status": "draft",
+    "requirements": {
+      "part_description": "Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+      "materials": [],
+      "processes": [],
+      "quantity": null,
+      "certifications": [
+        "IS 9473"
+      ],
+      "tolerance": null,
+      "standards": [
+        "IS 9473"
+      ]
+    },
+    "missing_fields": [
+      "materials",
+      "processes",
+      "quantity",
+      "tolerance"
+    ],
+    "field_provenance": {
+      "certifications": {
+        "source": "buyer",
+        "at": "2026-10-20T13:15:04.560684+00:00"
+      },
+      "part_description": {
+        "source": "buyer",
+        "at": "2026-10-20T13:15:04.560684+00:00"
+      },
+      "standards": {
+        "source": "buyer",
+        "at": "2026-10-20T13:15:04.560684+00:00"
+      }
+    },
+    "location": {
+      "country": "IN",
+      "reference_location": null,
+      "radius": null
+    },
+    "suppliers": [
+      {
+        "address": "Unit No.21,22,23, Ground Floor, Supreme Estate, Survey No. 14, H. No. 2, Village Devdal,THANE,VASAI,THANE,MAHARASHTRA",
+        "site_id": "095067db-9a2d-48a5-9ebe-8a052368ec1c",
+        "identifiers": [
+          {
+            "type": "name",
+            "value": "Magnum Health & Safety Pvt Ltd",
+            "normalized": "magnum health & safety pvt ltd"
+          },
+          {
+            "type": "licence_number",
+            "value": "2808664",
+            "normalized": "2808664"
+          }
+        ],
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "address_role": "production_site",
+        "display_name": "Magnum Health & Safety Pvt Ltd"
+      },
+      {
+        "address": "B-20, MIDC, Ranjangaon Tal Shirur,PUNE,PUNE,PUNE,MAHARASHTRA",
+        "site_id": "1c62a680-df95-4a1c-933b-86d927029eb5",
+        "identifiers": [
+          {
+            "type": "name",
+            "value": "3M India Ltd",
+            "normalized": "3m india ltd"
+          },
+          {
+            "type": "licence_number",
+            "value": "6801064",
+            "normalized": "6801064"
+          }
+        ],
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "address_role": "production_site",
+        "display_name": "3M India Ltd"
+      }
+    ],
+    "review_flags": [],
+    "input_provenance": {
+      "mode": "buyer_text",
+      "message_id": "771f91e6-b6b5-442a-b614-0c09efc88464",
+      "text_sha256": "50413b825bf67d315c7af80989ac8f8bbca47b9af62a906c5706d1411fcaeaf4",
+      "schema_version": 1
+    },
+    "confirmed_at": null,
+    "confirmed_by": null,
+    "created_at": "2026-10-20T13:15:04.320945+00:00",
+    "etag": "\"b157bd7e-d504-4227-9eda-557c9ac6a5f3:dbd1cbfeb753d29e\""
+  }
+}

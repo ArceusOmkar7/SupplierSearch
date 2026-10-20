@@ -1,0 +1,23 @@
+{
+  "etag": "\"491cb271-0f78-4dce-b1bc-e2d9e2a76c32:19bf660dc4cef029\"",
+  "body": {
+    "items": [
+      {
+        "id": "491cb271-0f78-4dce-b1bc-e2d9e2a76c32",
+        "type": "resolve_identity",
+        "state": "pending",
+        "run_id": "41fe1266-14c3-4167-8c53-17b36412de69",
+        "revision_id": "17af480f-a7fb-43c8-b70c-1bf840610741",
+        "affected_task_ids": [
+          "f54b2489-fa35-43e6-bf08-4260a6e0f56f",
+          "a6b9db84-c324-49a1-ad06-6b3c59819f91"
+        ],
+        "requested_document_id": null,
+        "created_at": "2026-10-20T13:22:29.621873+00:00",
+        "resolved_at": null,
+        "etag": "\"491cb271-0f78-4dce-b1bc-e2d9e2a76c32:19bf660dc4cef029\""
+      }
+    ],
+    "next_cursor": null
+  }
+}

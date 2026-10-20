@@ -1,0 +1,168 @@
+{
+  "etag": "\"83fa705a-11a1-441f-a241-89a74ae16d8c:completed_with_gaps:2026-10-20T13:15:05.964689+00:00\"",
+  "body": {
+    "run": {
+      "id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+      "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+      "revision_id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+      "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+      "policy_version": "core-v1",
+      "country_pack_version": "IN/core-v1",
+      "mode": "live",
+      "state": "completed_with_gaps",
+      "requested_at": "2026-10-20T13:15:04.733139+00:00",
+      "started_at": "2026-10-20T13:15:04.872397+00:00",
+      "initial_deadline": "2026-10-20T13:45:04.733139+00:00",
+      "completed_at": "2026-10-20T13:15:05.964689+00:00",
+      "budgets": {
+        "model": {
+          "concurrency": 1,
+          "context_tokens": 4096
+        },
+        "requests": {
+          "global": 4,
+          "browser": 1,
+          "per_domain": 1
+        },
+        "per_supplier": {
+          "depth": 2,
+          "pages": 20,
+          "certificate_pdfs": 5
+        },
+        "schema_version": 1,
+        "timeout_seconds": 20,
+        "paid_spend_limit": 0,
+        "transient_retries": 1,
+        "website_deadline_seconds": 900
+      },
+      "task_count": 12,
+      "task_states": {
+        "succeeded": 2,
+        "no_evidence": 10
+      },
+      "etag": "\"83fa705a-11a1-441f-a241-89a74ae16d8c:completed_with_gaps:2026-10-20T13:15:05.964689+00:00\""
+    },
+    "tasks": [
+      {
+        "id": "5f45a7f6-10c0-4f8b-9245-e78ec12f7f3f",
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "check_type": "local_export_lookup",
+        "source_id": "in.local-export",
+        "state": "succeeded",
+        "dependency_ids": [],
+        "wait_action_id": null
+      },
+      {
+        "id": "a0e9b84d-8192-47ee-bac2-32745e12dacf",
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "check_type": "website_traversal",
+        "source_id": "in.supplier-website",
+        "state": "no_evidence",
+        "dependency_ids": [],
+        "wait_action_id": null
+      },
+      {
+        "id": "53ba253b-3a92-4f98-9d95-e8b3fe10750b",
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "check_type": "certificate_document",
+        "source_id": "in.buyer-certificate",
+        "state": "no_evidence",
+        "dependency_ids": [
+          "a0e9b84d-8192-47ee-bac2-32745e12dacf"
+        ],
+        "wait_action_id": null
+      },
+      {
+        "id": "a9101cee-b19d-4917-97ba-41c9cdf49ab4",
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "check_type": "certificate_issuer_lookup",
+        "source_id": "in.issuer-pages",
+        "state": "no_evidence",
+        "dependency_ids": [
+          "53ba253b-3a92-4f98-9d95-e8b3fe10750b"
+        ],
+        "wait_action_id": null
+      },
+      {
+        "id": "3f4c3057-2d4d-40e1-bbfb-e294413cb21b",
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "check_type": "certificate_qr_follow",
+        "source_id": "in.issuer-pages",
+        "state": "no_evidence",
+        "dependency_ids": [
+          "53ba253b-3a92-4f98-9d95-e8b3fe10750b"
+        ],
+        "wait_action_id": null
+      },
+      {
+        "id": "29d984ce-b2e1-4799-aa2a-a5de70edfcf9",
+        "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+        "check_type": "bis_applicability",
+        "source_id": "in.bis-orders",
+        "state": "no_evidence",
+        "dependency_ids": [],
+        "wait_action_id": null
+      },
+      {
+        "id": "e4dd1aa4-5ebd-4f3c-b803-f13ff98f53e1",
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "check_type": "local_export_lookup",
+        "source_id": "in.local-export",
+        "state": "succeeded",
+        "dependency_ids": [],
+        "wait_action_id": null
+      },
+      {
+        "id": "32101f4f-4126-4871-9d33-8831c387336b",
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "check_type": "website_traversal",
+        "source_id": "in.supplier-website",
+        "state": "no_evidence",
+        "dependency_ids": [],
+        "wait_action_id": null
+      },
+      {
+        "id": "f737772c-201c-451e-b3d2-7813e3375f5f",
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "check_type": "certificate_document",
+        "source_id": "in.buyer-certificate",
+        "state": "no_evidence",
+        "dependency_ids": [
+          "32101f4f-4126-4871-9d33-8831c387336b"
+        ],
+        "wait_action_id": null
+      },
+      {
+        "id": "4be666d0-7886-454d-99d5-fda9cfa47aaf",
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "check_type": "certificate_issuer_lookup",
+        "source_id": "in.issuer-pages",
+        "state": "no_evidence",
+        "dependency_ids": [
+          "f737772c-201c-451e-b3d2-7813e3375f5f"
+        ],
+        "wait_action_id": null
+      },
+      {
+        "id": "2ac09b0d-9eb9-483d-af52-8c1b3625769e",
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "check_type": "certificate_qr_follow",
+        "source_id": "in.issuer-pages",
+        "state": "no_evidence",
+        "dependency_ids": [
+          "f737772c-201c-451e-b3d2-7813e3375f5f"
+        ],
+        "wait_action_id": null
+      },
+      {
+        "id": "9426aac4-9dd7-436d-aee2-eec1d5c1be6d",
+        "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+        "check_type": "bis_applicability",
+        "source_id": "in.bis-orders",
+        "state": "no_evidence",
+        "dependency_ids": [],
+        "wait_action_id": null
+      }
+    ]
+  }
+}

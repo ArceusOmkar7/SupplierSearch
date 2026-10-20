@@ -1,0 +1,25 @@
+{
+  "etag": null,
+  "body": {
+    "id": "171e241f-7918-4acc-a461-a956f25e5767",
+    "run_id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+    "task_id": "5f45a7f6-10c0-4f8b-9245-e78ec12f7f3f",
+    "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+    "claim_ids": [
+      "2bf3f82d-bbc1-4011-810a-cd25f225a42b",
+      "92bc7bea-4700-4aff-b89e-12aa87a08f86"
+    ],
+    "source_version": "in.local-export@1",
+    "kind": "document_read",
+    "target": "local-export",
+    "requested_at": "2026-10-20T13:15:04.911259+00:00",
+    "started_at": null,
+    "finished_at": "2026-10-20T13:15:04.911259+00:00",
+    "request_dispatched": false,
+    "outcome": "success",
+    "reason_code": null,
+    "http_status": null,
+    "artifact_refs": [],
+    "retry_of": null
+  }
+}

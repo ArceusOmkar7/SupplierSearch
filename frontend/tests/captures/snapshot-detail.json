@@ -1,0 +1,1267 @@
+{
+  "etag": "\"0b93b61f-8c27-4653-8361-38e04eb3fe4a:f68f642debde6d9c\"",
+  "body": {
+    "historical": false,
+    "closed_snapshot": false,
+    "id": "0b93b61f-8c27-4653-8361-38e04eb3fe4a",
+    "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+    "run_id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+    "revision_id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+    "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+    "sequence": 3,
+    "trigger": "completed",
+    "created_at": "2026-10-20T13:15:05.981417+00:00",
+    "event_cutoff": 27,
+    "content_hash": "f68f642debde6d9cfd2333a15f7ff89dd2ec4d3184ac1cc4e971d39d05a5b752",
+    "partial": false,
+    "counts": {
+      "qualified": 0,
+      "follow_up": 2,
+      "excluded": 0
+    },
+    "content": {
+      "run": {
+        "id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+        "mode": "live",
+        "state": "completed_with_gaps",
+        "started_at": "2026-10-20T13:15:04.872397+00:00",
+        "completed_at": "2026-10-20T13:15:05.964689+00:00",
+        "initial_deadline": "2026-10-20T13:45:04.733139+00:00",
+        "country_pack_version": "IN/core-v1"
+      },
+      "lists": {
+        "counts": {
+          "follow_up": 2
+        },
+        "excluded": {},
+        "follow_up": [
+          "73ef909b-b59b-4552-ae46-9d22d619af38",
+          "a7350916-608c-4d43-9cf5-fc7f18e5e36b"
+        ],
+        "qualified": []
+      },
+      "trigger": "completed",
+      "coverage": {
+        "tasks": {
+          "succeeded": 2,
+          "no_evidence": 10
+        },
+        "total_claims": 18,
+        "requests_sent": 0,
+        "replay_evidence": 0,
+        "attempt_outcomes": {
+          "skipped": 8,
+          "success": 2,
+          "no_record": 4
+        },
+        "evaluated_claims": 18,
+        "requests_not_sent": 14
+      },
+      "revision": {
+        "id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+        "location": {
+          "radius": null,
+          "country": "IN",
+          "schema_version": 1,
+          "reference_location": null
+        },
+        "sequence": 1,
+        "requirements": {
+          "quantity": null,
+          "materials": [],
+          "processes": [],
+          "standards": [
+            "IS 9473"
+          ],
+          "tolerance": null,
+          "certifications": [
+            "IS 9473"
+          ],
+          "schema_version": 1,
+          "field_provenance": {
+            "standards": {
+              "at": "2026-10-20T13:15:04.560684+00:00",
+              "source": "buyer"
+            },
+            "certifications": {
+              "at": "2026-10-20T13:15:04.560684+00:00",
+              "source": "buyer"
+            },
+            "part_description": {
+              "at": "2026-10-20T13:15:04.560684+00:00",
+              "source": "buyer"
+            }
+          },
+          "part_description": "Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें"
+        }
+      },
+      "suppliers": [
+        {
+          "claims": [
+            {
+              "gaps": [
+                "regulatory.order: No current official applicability basis",
+                "regulatory.licence: No current official licence record covering product and site",
+                "regulatory.licence: record not used — the record's own validity has ended",
+                "regulatory.licence: record not used — reference does not belong to this case and supplier",
+                "check capability_check skipped (not_supported); no external request was sent",
+                "check document_read no_record; no external request was sent"
+              ],
+              "type": "regulatory",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "171e241f-7918-4acc-a461-a956f25e5767",
+                  "kind": "document_read",
+                  "target": "local-export",
+                  "outcome": "success",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "45ae3e5f-dbb9-4508-b54e-44589cc07958",
+                  "kind": "capability_check",
+                  "target": "manak-current-licence-search",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "not_supported",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "5aee03c1-781f-4286-9b75-080d974eeb86",
+                  "kind": "document_read",
+                  "target": "bis-qco-catalogue",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "2bf3f82d-bbc1-4011-810a-cd25f225a42b",
+              "evidence": [],
+              "required": true,
+              "assertion": "Magnum Health & Safety Pvt Ltd satisfies regulatory requirement IS 9473",
+              "reasoning": "regulatory.order: insufficient — No current official applicability basis; regulatory.licence: insufficient — No current official licence record covering product and site",
+              "considered": [
+                {
+                  "reason": "the record's own validity has ended",
+                  "issued_at": "2020-08-27T00:00:00+00:00",
+                  "source_ref": "09f57173-f0fb-4e60-b8ec-320856a3af1a",
+                  "evidence_id": "bf738c30-43b8-460c-8c5e-d12c168886d5",
+                  "observation": "Magnum Health & Safety Pvt Ltd appears in an official export (cutoff 2020-08-27; imported record, not a current status): licence_number 2808664; validity as listed 2020-10-14; address as listed: Unit No.21,22,23, Ground Floor, Supreme Estate, Survey No. 14, H. No. 2, Village Devdal,THANE,VASAI,THANE,MAHARASHTRA",
+                  "criterion_id": "regulatory.licence",
+                  "authority_role": "official_publication"
+                },
+                {
+                  "reason": "reference does not belong to this case and supplier",
+                  "issued_at": "2020-08-27T00:00:00+00:00",
+                  "source_ref": "09f57173-f0fb-4e60-b8ec-320856a3af1a",
+                  "evidence_id": "98bc6dae-63fb-40e9-aa85-7d199d6ec0c4",
+                  "observation": "3M India Ltd appears in an official export (cutoff 2020-08-27; imported record, not a current status): licence_number 6801064; validity as listed 2021-03-31; address as listed: B-20, MIDC, Ranjangaon Tal Shirur,PUNE,PUNE,PUNE,MAHARASHTRA",
+                  "criterion_id": "regulatory.licence",
+                  "authority_role": "official_publication"
+                }
+              ],
+              "assessment_id": "30d486ff-82d5-4049-b806-9068bfb23eb3",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No current official applicability basis",
+                  "supporting": [],
+                  "criterion_id": "regulatory.order"
+                },
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [
+                    {
+                      "reason": "the record's own validity has ended",
+                      "evidence_id": "bf738c30-43b8-460c-8c5e-d12c168886d5"
+                    },
+                    {
+                      "reason": "reference does not belong to this case and supplier",
+                      "evidence_id": "98bc6dae-63fb-40e9-aa85-7d199d6ec0c4"
+                    }
+                  ],
+                  "reasoning": "No current official licence record covering product and site",
+                  "supporting": [],
+                  "criterion_id": "regulatory.licence"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.accreditation: No authoritative accreditation evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "certificate.validity: No authoritative validity evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "certificate.site: No authoritative site evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "certificate.scope: No authoritative scope evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "b970899b-3b07-4177-b726-f5c6a034d6f6",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "ecdd24be-1ed3-403d-818a-ede420291390",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "4c2eec39-f89f-4d08-aa51-e06aaffddb67",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "7827994d-a840-4cfd-85f7-cd6f1fbeb907",
+              "evidence": [],
+              "required": false,
+              "assertion": "Magnum Health & Safety Pvt Ltd holds a valid IS 9473 certificate",
+              "reasoning": "IS 9473: issuer holds relevant accreditation: unproven; IS 9473: certificate status is valid at the relevant time: unproven; IS 9473: certificate covers the production site: unproven; IS 9473: certificate scope covers Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें: unproven",
+              "considered": [],
+              "assessment_id": "339c6915-cc99-47ff-b744-7d65a3c41bdb",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "label": "IS 9473: issuer holds relevant accreditation",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.accreditation: insufficient — No authoritative accreditation evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:18f1c338-a882-4eab-882f-dd6a36133e61"
+                },
+                {
+                  "label": "IS 9473: certificate status is valid at the relevant time",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.validity: insufficient — No authoritative validity evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:25199b19-361e-427c-bcaa-0ee38c748435"
+                },
+                {
+                  "label": "IS 9473: certificate covers the production site",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.site: insufficient — No authoritative site evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:38c3c720-660c-4783-8feb-00defde4ff04"
+                },
+                {
+                  "label": "IS 9473: certificate scope covers Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.scope: insufficient — No authoritative scope evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:79535c74-1e80-4228-aabb-e0c5d4508602"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "legal.registry: No matching current official registry result"
+              ],
+              "type": "legal_existence",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "171e241f-7918-4acc-a461-a956f25e5767",
+                  "kind": "document_read",
+                  "target": "local-export",
+                  "outcome": "success",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "92bc7bea-4700-4aff-b89e-12aa87a08f86",
+              "evidence": [],
+              "required": true,
+              "assertion": "Magnum Health & Safety Pvt Ltd is a legally existing, active entity",
+              "reasoning": "legal.registry: insufficient — No matching current official registry result",
+              "considered": [],
+              "assessment_id": "282e2617-e532-4dd2-b77d-0a6fc98d8dd0",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No matching current official registry result",
+                  "supporting": [],
+                  "criterion_id": "legal.registry"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "capability.overall: Required capability subclaims are not all proven",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "part_capability",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "e5480d51-4ba4-45f2-8371-216be0647903",
+                  "kind": "capability_check",
+                  "target": "supplier-website",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "a0d5005f-9081-43f7-a11a-c467da12942f",
+              "evidence": [],
+              "required": false,
+              "assertion": "Magnum Health & Safety Pvt Ltd can produce: Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+              "reasoning": "capability.overall: insufficient — Required capability subclaims are not all proven",
+              "considered": [],
+              "assessment_id": "20c3e31a-4054-4f90-8201-90a241d50b9e",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "Required capability subclaims are not all proven",
+                  "supporting": [],
+                  "criterion_id": "capability.overall"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "manufacturer.site_activity: No attributable production-site record",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "manufacturer",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "e5480d51-4ba4-45f2-8371-216be0647903",
+                  "kind": "capability_check",
+                  "target": "supplier-website",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "a533991c-cbf9-41ac-a8d7-f09e6588693a",
+              "evidence": [],
+              "required": false,
+              "assertion": "Magnum Health & Safety Pvt Ltd manufactures at the relevant production site",
+              "reasoning": "manufacturer.site_activity: insufficient — No attributable production-site record",
+              "considered": [],
+              "assessment_id": "e1895a45-83cb-46a6-b471-43e04d6ff1f5",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No attributable production-site record",
+                  "supporting": [],
+                  "criterion_id": "manufacturer.site_activity"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.accreditation: No authoritative accreditation evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "b970899b-3b07-4177-b726-f5c6a034d6f6",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "ecdd24be-1ed3-403d-818a-ede420291390",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "4c2eec39-f89f-4d08-aa51-e06aaffddb67",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "18f1c338-a882-4eab-882f-dd6a36133e61",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: issuer holds relevant accreditation",
+              "reasoning": "certificate.accreditation: insufficient — No authoritative accreditation evidence",
+              "considered": [],
+              "assessment_id": "5d8b278f-7052-49ea-9e1c-9ee00a73f8c5",
+              "parent_claim_id": "7827994d-a840-4cfd-85f7-cd6f1fbeb907",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative accreditation evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.accreditation"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.validity: No authoritative validity evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "b970899b-3b07-4177-b726-f5c6a034d6f6",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "ecdd24be-1ed3-403d-818a-ede420291390",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "4c2eec39-f89f-4d08-aa51-e06aaffddb67",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "25199b19-361e-427c-bcaa-0ee38c748435",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: certificate status is valid at the relevant time",
+              "reasoning": "certificate.validity: insufficient — No authoritative validity evidence",
+              "considered": [],
+              "assessment_id": "821c7a63-7dfa-419d-bb82-b3b76b066595",
+              "parent_claim_id": "7827994d-a840-4cfd-85f7-cd6f1fbeb907",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative validity evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.validity"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.site: No authoritative site evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "b970899b-3b07-4177-b726-f5c6a034d6f6",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "ecdd24be-1ed3-403d-818a-ede420291390",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "4c2eec39-f89f-4d08-aa51-e06aaffddb67",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "38c3c720-660c-4783-8feb-00defde4ff04",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: certificate covers the production site",
+              "reasoning": "certificate.site: insufficient — No authoritative site evidence",
+              "considered": [],
+              "assessment_id": "1803ab8c-f131-4c00-84cd-0fac8fda8b2d",
+              "parent_claim_id": "7827994d-a840-4cfd-85f7-cd6f1fbeb907",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative site evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.site"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.scope: No authoritative scope evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "b970899b-3b07-4177-b726-f5c6a034d6f6",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "ecdd24be-1ed3-403d-818a-ede420291390",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "4c2eec39-f89f-4d08-aa51-e06aaffddb67",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "79535c74-1e80-4228-aabb-e0c5d4508602",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: certificate scope covers Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+              "reasoning": "certificate.scope: insufficient — No authoritative scope evidence",
+              "considered": [],
+              "assessment_id": "76f524fa-5052-438c-aa5b-0b087cf722a7",
+              "parent_claim_id": "7827994d-a840-4cfd-85f7-cd6f1fbeb907",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative scope evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.scope"
+                }
+              ]
+            }
+          ],
+          "status": "follow_up",
+          "reasons": [
+            "Unproven: Magnum Health & Safety Pvt Ltd is a legally existing, active entity",
+            "Unproven: Magnum Health & Safety Pvt Ltd satisfies regulatory requirement IS 9473"
+          ],
+          "indicators": [],
+          "supplier_id": "73ef909b-b59b-4552-ae46-9d22d619af38",
+          "display_name": "Magnum Health & Safety Pvt Ltd",
+          "pending_states": [],
+          "processing_state": "complete"
+        },
+        {
+          "claims": [
+            {
+              "gaps": [
+                "manufacturer.site_activity: No attributable production-site record",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "manufacturer",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "7a7fa9bf-834b-424b-9dc2-37f7461b4240",
+                  "kind": "capability_check",
+                  "target": "supplier-website",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "7e1ef67d-e72b-4004-87b0-2fbec3ef2622",
+              "evidence": [],
+              "required": false,
+              "assertion": "3M India Ltd manufactures at the relevant production site",
+              "reasoning": "manufacturer.site_activity: insufficient — No attributable production-site record",
+              "considered": [],
+              "assessment_id": "3f2d68e0-02e4-4499-bcfc-df4c9b51fe40",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No attributable production-site record",
+                  "supporting": [],
+                  "criterion_id": "manufacturer.site_activity"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "regulatory.order: No current official applicability basis",
+                "regulatory.licence: No current official licence record covering product and site",
+                "regulatory.licence: record not used — reference does not belong to this case and supplier",
+                "regulatory.licence: record not used — the record's own validity has ended",
+                "check capability_check skipped (not_supported); no external request was sent",
+                "check document_read no_record; no external request was sent"
+              ],
+              "type": "regulatory",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "3695a788-6f16-43cd-87c3-b88e605fe34e",
+                  "kind": "document_read",
+                  "target": "local-export",
+                  "outcome": "success",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "0aa09a2e-e566-430c-a4bd-9e2f4b3c46a1",
+                  "kind": "capability_check",
+                  "target": "manak-current-licence-search",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "not_supported",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "e2c91876-14c9-4470-918e-cdb33118353a",
+                  "kind": "document_read",
+                  "target": "bis-qco-catalogue",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "7e878550-8766-4408-b11b-f9c2fca25508",
+              "evidence": [],
+              "required": true,
+              "assertion": "3M India Ltd satisfies regulatory requirement IS 9473",
+              "reasoning": "regulatory.order: insufficient — No current official applicability basis; regulatory.licence: insufficient — No current official licence record covering product and site",
+              "considered": [
+                {
+                  "reason": "reference does not belong to this case and supplier",
+                  "issued_at": "2020-08-27T00:00:00+00:00",
+                  "source_ref": "09f57173-f0fb-4e60-b8ec-320856a3af1a",
+                  "evidence_id": "bf738c30-43b8-460c-8c5e-d12c168886d5",
+                  "observation": "Magnum Health & Safety Pvt Ltd appears in an official export (cutoff 2020-08-27; imported record, not a current status): licence_number 2808664; validity as listed 2020-10-14; address as listed: Unit No.21,22,23, Ground Floor, Supreme Estate, Survey No. 14, H. No. 2, Village Devdal,THANE,VASAI,THANE,MAHARASHTRA",
+                  "criterion_id": "regulatory.licence",
+                  "authority_role": "official_publication"
+                },
+                {
+                  "reason": "the record's own validity has ended",
+                  "issued_at": "2020-08-27T00:00:00+00:00",
+                  "source_ref": "09f57173-f0fb-4e60-b8ec-320856a3af1a",
+                  "evidence_id": "98bc6dae-63fb-40e9-aa85-7d199d6ec0c4",
+                  "observation": "3M India Ltd appears in an official export (cutoff 2020-08-27; imported record, not a current status): licence_number 6801064; validity as listed 2021-03-31; address as listed: B-20, MIDC, Ranjangaon Tal Shirur,PUNE,PUNE,PUNE,MAHARASHTRA",
+                  "criterion_id": "regulatory.licence",
+                  "authority_role": "official_publication"
+                }
+              ],
+              "assessment_id": "e5b698ce-4112-4c6f-ac21-db92ad7166ed",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No current official applicability basis",
+                  "supporting": [],
+                  "criterion_id": "regulatory.order"
+                },
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [
+                    {
+                      "reason": "reference does not belong to this case and supplier",
+                      "evidence_id": "bf738c30-43b8-460c-8c5e-d12c168886d5"
+                    },
+                    {
+                      "reason": "the record's own validity has ended",
+                      "evidence_id": "98bc6dae-63fb-40e9-aa85-7d199d6ec0c4"
+                    }
+                  ],
+                  "reasoning": "No current official licence record covering product and site",
+                  "supporting": [],
+                  "criterion_id": "regulatory.licence"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.accreditation: No authoritative accreditation evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "certificate.validity: No authoritative validity evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "certificate.scope: No authoritative scope evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "certificate.site: No authoritative site evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "1c596663-ddbd-40ee-9152-f58f1e4f3f45",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "8ba29333-5642-4d38-928c-c1935c0c58d0",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "10dc14fe-32a9-49e9-ac60-f27a2af02247",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "8de86061-cdd3-4cc2-99e5-fa5a6cae3008",
+              "evidence": [],
+              "required": false,
+              "assertion": "3M India Ltd holds a valid IS 9473 certificate",
+              "reasoning": "IS 9473: issuer holds relevant accreditation: unproven; IS 9473: certificate status is valid at the relevant time: unproven; IS 9473: certificate scope covers Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें: unproven; IS 9473: certificate covers the production site: unproven",
+              "considered": [],
+              "assessment_id": "b3d10c58-ff6d-4cd0-a850-48044713a6a9",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "label": "IS 9473: issuer holds relevant accreditation",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.accreditation: insufficient — No authoritative accreditation evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:bfecb6ae-848d-4621-bb76-6e2c55ea96b8"
+                },
+                {
+                  "label": "IS 9473: certificate status is valid at the relevant time",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.validity: insufficient — No authoritative validity evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:08b918de-e2ea-4d21-9901-03196bddd7ec"
+                },
+                {
+                  "label": "IS 9473: certificate scope covers Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.scope: insufficient — No authoritative scope evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:065cbd12-c249-4bea-985b-f9d0ae02df34"
+                },
+                {
+                  "label": "IS 9473: certificate covers the production site",
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "certificate.site: insufficient — No authoritative site evidence",
+                  "supporting": [],
+                  "criterion_id": "subclaim:a23cdb16-9f98-49f5-9bd3-476e97223884"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "legal.registry: No matching current official registry result"
+              ],
+              "type": "legal_existence",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "3695a788-6f16-43cd-87c3-b88e605fe34e",
+                  "kind": "document_read",
+                  "target": "local-export",
+                  "outcome": "success",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "b46da6b7-dc94-4fb8-99d3-bd392ce79b1d",
+              "evidence": [],
+              "required": true,
+              "assertion": "3M India Ltd is a legally existing, active entity",
+              "reasoning": "legal.registry: insufficient — No matching current official registry result",
+              "considered": [],
+              "assessment_id": "12d37f6d-06a3-431d-bcf2-84e7fa22782b",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No matching current official registry result",
+                  "supporting": [],
+                  "criterion_id": "legal.registry"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "capability.overall: Required capability subclaims are not all proven",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "part_capability",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "7a7fa9bf-834b-424b-9dc2-37f7461b4240",
+                  "kind": "capability_check",
+                  "target": "supplier-website",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "f2142718-b062-4376-bd40-8049dded67ff",
+              "evidence": [],
+              "required": false,
+              "assertion": "3M India Ltd can produce: Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+              "reasoning": "capability.overall: insufficient — Required capability subclaims are not all proven",
+              "considered": [],
+              "assessment_id": "d57d1555-22b0-4876-8933-eaef5bd49880",
+              "parent_claim_id": null,
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "Required capability subclaims are not all proven",
+                  "supporting": [],
+                  "criterion_id": "capability.overall"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.scope: No authoritative scope evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "1c596663-ddbd-40ee-9152-f58f1e4f3f45",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "8ba29333-5642-4d38-928c-c1935c0c58d0",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "10dc14fe-32a9-49e9-ac60-f27a2af02247",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "065cbd12-c249-4bea-985b-f9d0ae02df34",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: certificate scope covers Supply, Installation and Commissioning of Universal Testing Machine (UTM- 1200 kN) उपकरणों के तकनीकी लवलनदशे के लिए कृपया अनुिग्नक 3- दखे ें",
+              "reasoning": "certificate.scope: insufficient — No authoritative scope evidence",
+              "considered": [],
+              "assessment_id": "f124e883-4194-42b3-a251-13a152d6916b",
+              "parent_claim_id": "8de86061-cdd3-4cc2-99e5-fa5a6cae3008",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative scope evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.scope"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.validity: No authoritative validity evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "1c596663-ddbd-40ee-9152-f58f1e4f3f45",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "8ba29333-5642-4d38-928c-c1935c0c58d0",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "10dc14fe-32a9-49e9-ac60-f27a2af02247",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "08b918de-e2ea-4d21-9901-03196bddd7ec",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: certificate status is valid at the relevant time",
+              "reasoning": "certificate.validity: insufficient — No authoritative validity evidence",
+              "considered": [],
+              "assessment_id": "72dc1c8c-88be-4924-a3b7-3488254442c7",
+              "parent_claim_id": "8de86061-cdd3-4cc2-99e5-fa5a6cae3008",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative validity evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.validity"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.site: No authoritative site evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "1c596663-ddbd-40ee-9152-f58f1e4f3f45",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "8ba29333-5642-4d38-928c-c1935c0c58d0",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "10dc14fe-32a9-49e9-ac60-f27a2af02247",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "a23cdb16-9f98-49f5-9bd3-476e97223884",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: certificate covers the production site",
+              "reasoning": "certificate.site: insufficient — No authoritative site evidence",
+              "considered": [],
+              "assessment_id": "4d862dd8-124b-4723-9952-a4807677c7c4",
+              "parent_claim_id": "8de86061-cdd3-4cc2-99e5-fa5a6cae3008",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative site evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.site"
+                }
+              ]
+            },
+            {
+              "gaps": [
+                "certificate.accreditation: No authoritative accreditation evidence",
+                "check document_read no_record; no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent",
+                "check capability_check skipped (missing_identifier); no external request was sent"
+              ],
+              "type": "certificate",
+              "verdict": "unproven",
+              "attempts": [
+                {
+                  "id": "1c596663-ddbd-40ee-9152-f58f1e4f3f45",
+                  "kind": "document_read",
+                  "target": "certificate-documents",
+                  "outcome": "no_record",
+                  "http_status": null,
+                  "reason_code": null,
+                  "request_dispatched": false
+                },
+                {
+                  "id": "8ba29333-5642-4d38-928c-c1935c0c58d0",
+                  "kind": "capability_check",
+                  "target": "issuer-pages",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                },
+                {
+                  "id": "10dc14fe-32a9-49e9-ac60-f27a2af02247",
+                  "kind": "capability_check",
+                  "target": "official-links",
+                  "outcome": "skipped",
+                  "http_status": null,
+                  "reason_code": "missing_identifier",
+                  "request_dispatched": false
+                }
+              ],
+              "claim_id": "bfecb6ae-848d-4621-bb76-6e2c55ea96b8",
+              "evidence": [],
+              "required": false,
+              "assertion": "IS 9473: issuer holds relevant accreditation",
+              "reasoning": "certificate.accreditation: insufficient — No authoritative accreditation evidence",
+              "considered": [],
+              "assessment_id": "73aa6716-1c44-4380-9e77-c5b48ba87186",
+              "parent_claim_id": "8de86061-cdd3-4cc2-99e5-fa5a6cae3008",
+              "relevant_period": {
+                "kind": "current",
+                "as_of": null
+              },
+              "criterion_results": [
+                {
+                  "outcome": "insufficient",
+                  "refuting": [],
+                  "rejected": [],
+                  "reasoning": "No authoritative accreditation evidence",
+                  "supporting": [],
+                  "criterion_id": "certificate.accreditation"
+                }
+              ]
+            }
+          ],
+          "status": "follow_up",
+          "reasons": [
+            "Unproven: 3M India Ltd is a legally existing, active entity",
+            "Unproven: 3M India Ltd satisfies regulatory requirement IS 9473"
+          ],
+          "indicators": [],
+          "supplier_id": "a7350916-608c-4d43-9cf5-fc7f18e5e36b",
+          "display_name": "3M India Ltd",
+          "pending_states": [],
+          "processing_state": "complete"
+        }
+      ],
+      "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+      "policy_version": "core-v1",
+      "schema_version": 1,
+      "pending_actions": []
+    },
+    "decisions": []
+  }
+}

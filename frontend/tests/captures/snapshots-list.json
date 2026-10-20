@@ -1,0 +1,68 @@
+{
+  "etag": null,
+  "body": {
+    "items": [
+      {
+        "historical": false,
+        "closed_snapshot": false,
+        "id": "0b93b61f-8c27-4653-8361-38e04eb3fe4a",
+        "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+        "run_id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+        "revision_id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+        "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+        "sequence": 3,
+        "trigger": "completed",
+        "created_at": "2026-10-20T13:15:05.981417+00:00",
+        "event_cutoff": 27,
+        "content_hash": "f68f642debde6d9cfd2333a15f7ff89dd2ec4d3184ac1cc4e971d39d05a5b752",
+        "partial": false,
+        "counts": {
+          "qualified": 0,
+          "follow_up": 2,
+          "excluded": 0
+        }
+      },
+      {
+        "historical": false,
+        "closed_snapshot": false,
+        "id": "d38e34c2-67c7-4d7d-9482-d665f909a5df",
+        "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+        "run_id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+        "revision_id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+        "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+        "sequence": 2,
+        "trigger": "updated",
+        "created_at": "2026-10-20T13:15:05.859514+00:00",
+        "event_cutoff": 25,
+        "content_hash": "8064cc704ed53f538d92309f1ebf3c34c35f8e5166e2dd0e80efe2d0e9542510",
+        "partial": true,
+        "counts": {
+          "qualified": 0,
+          "follow_up": 2,
+          "excluded": 0
+        }
+      },
+      {
+        "historical": false,
+        "closed_snapshot": false,
+        "id": "804f632b-8291-4374-9234-f62bd8450244",
+        "case_id": "8e4db974-677f-43a9-b78b-bf271a52ed7d",
+        "run_id": "83fa705a-11a1-441f-a241-89a74ae16d8c",
+        "revision_id": "b157bd7e-d504-4227-9eda-557c9ac6a5f3",
+        "checklist_id": "3aa471c1-4adb-477a-a06f-f0261fbe9988",
+        "sequence": 1,
+        "trigger": "initial",
+        "created_at": "2026-10-20T13:15:05.770076+00:00",
+        "event_cutoff": 23,
+        "content_hash": "1ee07e4137aed51e68572064d11ec8f1328af808ce3105461ccf54b6ef67c274",
+        "partial": true,
+        "counts": {
+          "qualified": 0,
+          "follow_up": 2,
+          "excluded": 0
+        }
+      }
+    ],
+    "next_cursor": null
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Independent human audit labels and observed buyer timings for the 30-supplier evaluation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "dataset", "auditors", "suppliers", "labels", "timings"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "dataset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "created_at", "suppliers_expected", "cases_expected", "suppliers_per_case"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "created_at": { "type": "string", "format": "date-time" },
+        "suppliers_expected": { "const": 30 },
+        "cases_expected": { "const": 6 },
+        "suppliers_per_case": { "const": 5 }
+      }
+    },
+    "auditors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["auditor_id", "human", "independent", "independence_statement"],
+        "properties": {
+          "auditor_id": { "type": "string", "minLength": 1 },
+          "human": { "const": true },
+          "independent": { "type": "boolean" },
+          "independence_statement": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+    "suppliers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["supplier_ref", "case_ref", "case_id", "supplier_id", "source_records"],
+        "properties": {
+          "supplier_ref": { "type": "string", "minLength": 1 },
+          "case_ref": { "type": "string", "minLength": 1 },
+          "case_id": { "type": "string", "format": "uuid" },
+          "supplier_id": { "type": "string", "format": "uuid" },
+          "source_records": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+        }
+      }
+    },
+    "labels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["supplier_ref", "claim_id", "claim_type", "auditor_id", "label", "rationale", "labelled_at", "source"],
+        "properties": {
+          "supplier_ref": { "type": "string" },
+          "claim_id": { "type": "string", "format": "uuid" },
+          "claim_type": { "enum": ["legal_existence", "manufacturer", "part_capability", "certificate", "regulatory", "capacity"] },
+          "auditor_id": { "type": "string" },
+          "label": { "enum": ["proven", "unproven", "contradicted"] },
+          "rationale": { "type": "string", "minLength": 1 },
+          "evidence_refs": { "type": "array", "items": { "type": "string" } },
+          "labelled_at": { "type": "string", "format": "date-time" },
+          "source": { "const": "human" }
+        }
+      }
+    },
+    "timings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_ref", "suppliers", "intervals"],
+        "properties": {
+          "case_ref": { "type": "string" },
+          "suppliers": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+          "intervals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["activity", "started_at", "ended_at"],
+              "properties": {
+                "activity": { "enum": ["intake", "correction", "confirmation", "evidence_review", "decision_or_report"] },
+                "started_at": { "type": "string", "format": "date-time" },
+                "ended_at": { "type": "string", "format": "date-time" }
+              }
+            }
+          },
+          "unattended_collection": { "type": "array", "items": { "$ref": "#/$defs/span" } },
+          "excluded_waits": { "type": "array", "items": { "$ref": "#/$defs/span" } }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "span": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["started_at", "ended_at"],
+      "properties": {
+        "started_at": { "type": "string", "format": "date-time" },
+        "ended_at": { "type": "string", "format": "date-time" },
+        "reason": { "type": "string" }
+      }
+    }
+  }
+}

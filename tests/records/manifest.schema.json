@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Genuine captured record provenance",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "kind", "mode", "publisher", "original_url", "rights", "attribution", "obtained_at", "publication_cutoff", "cutoff_unknown_reason", "coverage", "file", "sha256", "format", "locator"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "kind": { "enum": ["supplier", "official", "issuer", "buyer_request"] },
+    "mode": { "const": "live" },
+    "publisher": { "type": "string", "minLength": 1 },
+    "original_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+    "rights": { "type": "string", "minLength": 1 },
+    "attribution": { "type": "string", "minLength": 1 },
+    "obtained_at": { "type": "string", "format": "date-time" },
+    "publication_cutoff": { "type": ["string", "null"], "format": "date-time" },
+    "cutoff_unknown_reason": { "type": ["string", "null"], "minLength": 1 },
+    "coverage": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "file": { "type": "string", "minLength": 1 },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "format": { "enum": ["html", "pdf", "csv", "xlsx", "txt", "json"] },
+    "locator": { "type": "string", "minLength": 1 }
+  },
+  "oneOf": [
+    { "properties": { "publication_cutoff": { "type": "string" }, "cutoff_unknown_reason": { "type": "null" } } },
+    { "properties": { "publication_cutoff": { "type": "null" }, "cutoff_unknown_reason": { "type": "string" } } }
+  ]
+}
